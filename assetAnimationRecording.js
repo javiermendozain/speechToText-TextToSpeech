@@ -1,3 +1,5 @@
+//Animation credits: https://lottiefiles.com/4031-voice-recognition
+
 const BODY_MOVIN_DATA = {
   v: "5.4.2",
   fr: 60,
