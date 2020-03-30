@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speech To Text</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <div class="container text-center">
+      <h2>Speech to Text - Text to Speech</h2>
+      <small>Available for: <strong>Chrome and Edge</strong></small>
+      <div style="display: grid; justify-content: center;">
+        <div id="AnimationContainer" style="width: 350px;"></div>
+      </div>
+
+      <div class="row">
+        <dvi class="col">
+          <button id="btnRecord" class="btn btn-info">Record</button>
+
+          <button id="btnStopRecord" class="btn btn-danger">
+            Stop recording
+          </button>
+        </dvi>
+      </div>
+      <br />
+      <div
+        class="alert alert-danger"
+        role="alert"
+        id="alertError"
+        style="display: none;"
+      ></div>
+      <div class="row">
+        <div class="col">
+          <textarea id="txaResult" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <small id="txPrecision"></small>
+      <br />
+      <div class="row">
+        <div class="col">
+          <button id="btnPlayText" class="btn btn-outline-primary">
+            ▶ Play
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="assetAnimationRecording.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
